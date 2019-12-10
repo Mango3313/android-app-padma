@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.pacienteFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:paddingTop="5dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtPaciente"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/ic_user"
+            android:hint="@string/nombrePaciente"
+            android:inputType="text"
+            app:met_baseColor="@color/textColor"
+            app:met_primaryColor="@color/textColor"
+            app:met_textColorHint="@color/textColor" />
+
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:background="#431F63"
+            android:text="Buscar"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Estatus del tratamieno"/>
+
+
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtEstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Estatus del tratamiento"
+        android:inputType="text"
+        app:met_baseColor="@color/textColor"
+        app:met_primaryColor="@color/textColor"
+        app:met_textColorHint="@color/textColor" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Progreso"/>
+
+
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtProgreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Estatus del tratamiento"
+        android:inputType="text"
+        app:met_baseColor="@color/textColor"
+        app:met_primaryColor="@color/textColor"
+        app:met_textColorHint="@color/textColor" />
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Fecha de ingreso"/>
+
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtFechaIngreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Fecha de ingreso"
+        android:inputType="text"
+        app:met_baseColor="@color/textColor"
+        app:met_primaryColor="@color/textColor"
+        app:met_textColorHint="@color/textColor" />
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Número de visitas"/>
+
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtNumVisitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Fecha de ingreso"
+        android:inputType="text"
+        app:met_baseColor="@color/textColor"
+        app:met_primaryColor="@color/textColor"
+        app:met_textColorHint="@color/textColor" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Última visita"/>
+
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtFechaUltimaVisita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Última visita"
+        android:inputType="text"
+        app:met_baseColor="@color/textColor"
+        app:met_primaryColor="@color/textColor"
+        app:met_textColorHint="@color/textColor" />
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Fecha de próxima visita"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtFechaProximaVisita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Fecha de proxima visita"
+        android:inputType="text"
+        app:met_baseColor="@color/textColor"
+        app:met_primaryColor="@color/textColor"
+        app:met_textColorHint="@color/textColor" />
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Fecha estimada de egreso"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtFechaSalida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Fecha estimada de egreso"
+        android:inputType="text"
+        android:focusable="false"
+        android:clickable="false"
+        app:met_baseColor="@color/textColor"
+        app:met_primaryColor="@color/textColor"
+        app:met_textColorHint="@color/textColor" />
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Médico acargo"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtNombreMedico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Médico acargo"
+        android:inputType="text"
+        android:focusable="false"
+        android:clickable="false"
+        app:met_baseColor="@color/textColor"
+        app:met_primaryColor="@color/textColor"
+        app:met_textColorHint="@color/textColor" />
+
+
+
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Medicamentos"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtMedicamentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Medicamentos"
+        android:inputType="text"
+        android:focusable="false"
+        android:clickable="false"
+        app:met_baseColor="@color/textColor"
+        app:met_primaryColor="@color/textColor"
+        app:met_textColorHint="@color/textColor" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Observaciones"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtObservaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Observaciones "
+        android:inputType="text"
+        app:met_baseColor="@color/textColor"
+        app:met_primaryColor="@color/textColor"
+        app:met_textColorHint="@color/textColor" />
+
+
+
+</LinearLayout>
+</ScrollView>
